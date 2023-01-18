@@ -9,17 +9,31 @@
     <title>Vizitech AR Models</title>
 </head>
 <body>
+    <p class="page-title">Press the "View in your space" button on a model to see it in Augmented Reality!</p>
     <model-viewer src="./models/skull_v01.glb" disable-zoom ar ar-modes="webxr scene-viewer quick-look" camera-controls
         poster="poster.webp" shadow-intensity="1">
         <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
         </div>
-        <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; bottom: 16px; right: 50%; ">
+        <button slot="ar-button">
             View in your space
         </button>
     
         <!--<button>View in your space</button>-->
         <div class="title">Skull</div>
+    </model-viewer>
+
+    <model-viewer src="./models/jetengine.glb" disable-zoom ar ar-modes="webxr scene-viewer quick-look" camera-controls
+        poster="poster.webp" shadow-intensity="1">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button">
+            View in your space
+        </button>
+    
+        <!--<button>View in your space</button>-->
+        <div class="title">Jet Engine</div>
     </model-viewer>
 </body>
 </html>
