@@ -11,7 +11,19 @@
 </head>
 <body>
     <p class="page-title">Press the "View in your space" button on a model to see it in Augmented Reality!</p>
-    <model-viewer src="./models/skull_v01.glb" disable-zoom ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1">
+    <model-viewer src="./models/Heart_WebAR.gltf" disable-zoom ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" alt="Heart">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button">
+            View in your space
+        </button>
+    
+        <!--<button>View in your space</button>-->
+        <div class="title">Heart</div>
+    </model-viewer>
+
+    <model-viewer src="./models/skull_v01.glb" disable-zoom ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" alt="A Skull">
         <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
         </div>
@@ -23,7 +35,7 @@
         <div class="title">Skull</div>
     </model-viewer>
 
-    <model-viewer src="./models/jetengine.glb" disable-zoom ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1">
+    <model-viewer src="./models/jetengine.glb" disable-zoom ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" alt="Jet Engine">
         <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
         </div>
@@ -35,14 +47,7 @@
         <div class="title">Jet Engine</div>
     </model-viewer>
 
-    <model-viewer 
-        src="./models/v8.glb" 
-        disable-zoom autoplay ar ar-modes="webxr scene-viewer quick-look" 
-        camera-controls 
-        shadow-intensity="1"
-        ios-src="./models/engine.usdz"
-        xr-environment
-        alt="Animated Engine">
+    <model-viewer src="./models/v8.glb" disable-zoom autoplay ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" ios-src="./models/engine.usdz" xr-environment alt="Animated Engine">
         <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
         </div>
