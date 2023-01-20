@@ -23,7 +23,7 @@
         <div class="title">Heart</div>
     </model-viewer>
 
-    <model-viewer id="ForensicsKit" src="./models/Heart_WebAR.gltf" disable-zoom ar ar-modes="webxr scene-viewer quick-look"
+    <model-viewer id="ForensicsKit" src="./models/CSIKit.gltf" disable-zoom ar ar-modes="webxr scene-viewer quick-look"
         camera-controls shadow-intensity="1" alt="Heart">
         <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
@@ -72,4 +72,15 @@
         <div class="title">V12 Engine</div>
     </model-viewer>
 </body>
+<footer>
+    <script type="text/javascript">
+        const queryString = window.location.search;
+        const urlParam = new URLSearchParams(queryString);
+        const target = urlParam.get('target');
+        if(target != null)
+        {
+            document.getElementById(target).scrollIntoView();
+        }
+    </script>
+</footer>
 </html>
