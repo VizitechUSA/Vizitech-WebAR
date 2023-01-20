@@ -11,7 +11,7 @@
 </head>
 <body>
     <p class="page-title">Press the "View in your space" button on a model to see it in Augmented Reality!</p>
-    <model-viewer src="./models/Heart_WebAR.gltf" disable-zoom ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" alt="Heart">
+    <model-viewer id="Heart" src="./models/Heart_WebAR.gltf" disable-zoom ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" shadow-intensity="1" alt="Heart">
         <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
         </div>
@@ -23,7 +23,20 @@
         <div class="title">Heart</div>
     </model-viewer>
 
-    <model-viewer src="./models/skull_v01.glb" disable-zoom ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" alt="A Skull">
+    <model-viewer id="ForensicsKit" src="./models/Heart_WebAR.gltf" disable-zoom ar ar-modes="webxr scene-viewer quick-look"
+        camera-controls shadow-intensity="1" alt="Heart">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button">
+            View in your space
+        </button>
+    
+        <!--<button>View in your space</button>-->
+        <div class="title">Forensics Kit</div>
+    </model-viewer>
+
+    <model-viewer id="Skull" src="./models/skull_v01.glb" disable-zoom ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" shadow-intensity="1" alt="A Skull">
         <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
         </div>
@@ -35,7 +48,7 @@
         <div class="title">Skull</div>
     </model-viewer>
 
-    <model-viewer src="./models/jetengine.glb" disable-zoom ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" alt="Jet Engine">
+    <model-viewer id="JetEngine" src="./models/jetengine.glb" disable-zoom ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" shadow-intensity="1" alt="Jet Engine">
         <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
         </div>
@@ -47,7 +60,7 @@
         <div class="title">Jet Engine</div>
     </model-viewer>
 
-    <model-viewer src="./models/v12Engine.gltf" disable-zoom autoplay ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" ios-src="./models/v12Engine.usdz" xr-environment alt="Animated Engine">
+    <model-viewer id="Engine" src="./models/v12Engine.gltf" disable-zoom autoplay ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" shadow-intensity="1" ios-src="./models/v12Engine.usdz" xr-environment alt="Animated Engine">
         <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
         </div>
@@ -56,7 +69,7 @@
         </button>
     
         <!--<button>View in your space</button>-->
-        <div class="title">V8 Engine</div>
+        <div class="title">V12 Engine</div>
     </model-viewer>
 </body>
 </html>
